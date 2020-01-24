@@ -11,5 +11,5 @@ css:
   font-awesome: https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
   font: https://fonts.googleapis.com/css13b7.css?family=Open+Sans:400,300,600,700
 js:
-  bootstrap: https://stackpath.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css
+  bootstrap: https://stackpath.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js
   jquery: https://code.jquery.com/jquery-1.11.1.min.js
