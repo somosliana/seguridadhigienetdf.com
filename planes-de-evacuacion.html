@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Planes de Evacuacion
 ---
 
 <header class="planesfondo"></header>
@@ -7,33 +8,49 @@ layout: default
 <div class="container">
   <div class="row">
     <div class="col-lg-12 page-header clientes">
-      <h2>Planes de Evacuación</h2>
+      <h2>{{ page.title }}</h2>
     </div>
   </div>
 
   <div class="row contenido">
     <div class="col-md-5">
-      <img class="img-responsive img-hover" src="images/planes-de-evacuacion-big.jpg" alt="Planes de Evacuacion"
-        title="Planes de Evacuacion">
+      <img
+        class="img-responsive img-hover"
+        src="images/planes-de-evacuacion-big.jpg"
+        alt="{{ page.title }}"
+        title="{{ page.title }}"
+      />
     </div>
     <div class="col-md-6">
-      <p><b>• Tramites Ley 1346 GCBA y Provinciales<br>• Planos de Evacuación<br>• Presentación en Defensa
-          Civil.</b><br><br>En San Jose brindamos un servicio Integral para la confecciona del Plan de Evacuación. El Plan
-        es de aplicación obligatoria en edificios, tanto públicos como privados, oficinas, escuelas, y en todos aquellos
-        establecimientos que brindan atención al público.</p>
-      <a href="index.html#contacto" class="btn btn-success"><b>SOLICITAR PRESUPUESTO AHORA</b></a>
+      <p>
+        <b
+          >• Tramites Ley 1346 GCBA y Provinciales<br />• Planos de
+          Evacuación<br />• Presentación en Defensa Civil.</b
+        ><br /><br />En San Jose brindamos un servicio Integral para la
+        confecciona del Plan de Evacuación. El Plan es de aplicación obligatoria
+        en edificios, tanto públicos como privados, oficinas, escuelas, y en
+        todos aquellos establecimientos que brindan atención al público.
+      </p>
+      <a href="index.html#contacto" class="btn btn-success"
+        ><b>SOLICITAR PRESUPUESTO AHORA</b></a
+      >
     </div>
   </div>
   <div class="row detalles">
     <div class="col-md-6 col-sm-6">
       <div class="panel panel-default text-center img-hover">
         <div class="panel-body text-left">
-          <h4><i class="fa fa-fire-extinguisher" aria-hidden="true"></i> Proveemos servicio integral, accesible y de
-            calidad.</h4>
-          <hr>
+          <h4>
+            <i class="fa fa-fire-extinguisher" aria-hidden="true"></i> Proveemos
+            servicio integral, accesible y de calidad.
+          </h4>
+          <hr />
           <ul>
             <li>Confección del Plan de Evacuación.</li>
-            <li>Impresión de los planos a color y entrega con porta acrílico para exhibir en el establecimiento.</li>
+            <li>
+              Impresión de los planos a color y entrega con porta acrílico para
+              exhibir en el establecimiento.
+            </li>
           </ul>
         </div>
       </div>
@@ -41,29 +58,23 @@ layout: default
     <div class="col-md-6 col-sm-6">
       <div class="panel panel-default text-center img-hover">
         <div class="panel-body text-left">
-          <h4><i class="fa fa-users" aria-hidden="true"></i> Adaptado a las necesidades de nuestros clientes.</h4>
-          <hr>
+          <h4>
+            <i class="fa fa-users" aria-hidden="true"></i> Adaptado a las
+            necesidades de nuestros clientes.
+          </h4>
+          <hr />
           <ul>
-            <li>Capacitación en uso de extintores y Organización del personal.</li>
-            <li>Cronograma de simulacros. Presentación del trámite ante Defensa Civil del GCBA.</li>
+            <li>
+              Capacitación en uso de extintores y Organización del personal.
+            </li>
+            <li>
+              Cronograma de simulacros. Presentación del trámite ante Defensa
+              Civil del GCBA.
+            </li>
           </ul>
         </div>
       </div>
     </div>
   </div>
-
-  <div class="row otros-servicios">
-    <div class="col-lg-12">
-      <h2>Otros Servicios</h2>
-      <hr>
-    </div>
-    {% include otro-servicio.html href="higiene-y-seguridad.html" image="images/higiene-y-seguridad.jpg" title="Higiene y Seguridad"%}
-    {% include otro-servicio.html href="seguridad-en-la-construccion.html" image="images/seguridad-en-la-construccion.jpg" title="Seguridad en la Construccion"%}
-    <!--
-    {% include otro-servicio.html href="planes-de-evacuacion.html" image="images/planes-de-evacuacion.jpg" title="Planes de Evacuacion"%}
-    -->
-    {% include otro-servicio.html href="seguridad-para-servicios-de-salud.html" image="images/seguridad-para-servicios-de-salud.jpg" title="Seguridad para Servicios de Salud"%}
-    {% include otro-servicio.html href="medio-ambiente.html" image="images/medio-ambiente.jpg" title="Medio Ambiente"%}
-  </div>
-
+  {% include otros-servicios.html %}
 </div>

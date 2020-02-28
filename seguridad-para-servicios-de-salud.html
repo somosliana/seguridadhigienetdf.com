@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Seguridad para servicios de Salud
 ---
 
 <header class="mediofondo"></header>
@@ -10,7 +11,7 @@ layout: default
 
   <div class="row">
     <div class="col-lg-12 page-header clientes">
-      <h2>Medio Ambiente</h2>
+      <h2>{{ page.title }}</h2>
     </div>
   </div>
 
@@ -19,7 +20,8 @@ layout: default
       <img
         class="img-responsive img-hover"
         src="images/medio-ambiente-big.jpg"
-        alt=""
+        alt="{{ page.title }}"
+        title="{{ page.title }}"
       />
     </div>
     <div class="col-md-6">
@@ -75,18 +77,5 @@ layout: default
       </div>
     </div>
   </div>
-
-  <div class="row otros-servicios">
-    <div class="col-lg-12">
-      <h2>Otros Servicios</h2>
-      <hr />
-    </div>
-    {% include otro-servicio.html href="higiene-y-seguridad.html" image="images/higiene-y-seguridad.jpg" title="Higiene y Seguridad"%}
-    {% include otro-servicio.html href="seguridad-en-la-construccion.html" image="images/seguridad-en-la-construccion.jpg" title="Seguridad en la Construccion"%}
-    {% include otro-servicio.html href="planes-de-evacuacion.html" image="images/planes-de-evacuacion.jpg" title="Planes de Evacuacion"%}
-    <!--
-    {% include otro-servicio.html href="seguridad-para-servicios-de-salud.html" image="images/seguridad-para-servicios-de-salud.jpg" title="Seguridad para Servicios de Salud"%}
-    -->
-    {% include otro-servicio.html href="medio-ambiente.html" image="images/medio-ambiente.jpg" title="Medio Ambiente"%}
-  </div>
+  {% include otros-servicios.html %}
 </div>
