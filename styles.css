@@ -9,6 +9,11 @@ body {
     padding-top: 50px;
 }
 
+p {
+    text-align: justify;
+    text-justify: inter-character;
+}
+
 /* NAVBAR */
 
 .navbar-brand>img{
@@ -211,7 +216,7 @@ body {
 }
 
 .planesfondo{
-    background-image:url('../images/planes-de-evacuacion-top.jpg');
+    background-image:url('../images/control-de-incendios-top.jpg');
 
 }
 
