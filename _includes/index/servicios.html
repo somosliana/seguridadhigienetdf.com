@@ -1,118 +1,52 @@
-<!-- Portfolio Section -->
 <div class="row" id="servicios">
   <div class="col-lg-12">
     <h2 class="page-header text-center" style="color:#0374ba;">
       Nuestros Servicios
     </h2>
   </div>
-  <div class="col-md-4 col-sm-6">
-    <a href="higiene-y-seguridad.html"
-      ><img
-        class="img-responsive img-portfolio img-hover"
-        src="images/higiene-y-seguridad.jpg"
-        alt=""
-    /></a>
-
-    <p>
-      Proveemos un servicio totalmente adaptado a las necesidades de nuestros
-      clientes. Nuestros profesionales se encuentran altamente.
-    </p>
-
-    <a
-      href="higiene-y-seguridad.html"
-      class="btn btn-primary btn-primary btn-marginbottom"
-      >Conocé más <i class="fa fa-chevron-right" aria-hidden="true"></i>
-    </a>
-  </div>
-  <div class="col-md-4 col-sm-6">
-    <a href="seguridad-en-la-construccion.html"
-      ><img
-        class="img-responsive img-portfolio img-hover"
-        src="images/seguridad-en-la-construccion.jpg"
-        alt=""
-    /></a>
-
-    <p>
-      Proveemos servicios correspondientes a Programas de Seguridad en la
-      construcción, firma de Planos Ley 4497 y técnicos en obra.
-    </p>
-    <a
-      href="seguridad-en-la-construccion.html"
-      class="btn btn-primary btn-primary btn-marginbottom"
-      >Conocé más <span class="fa fa-chevron-right"></span
-    ></a>
-  </div>
-  <div class="col-md-4 col-sm-6">
-    <a href="planes-de-evacuacion.html"
-      ><img
-        class="img-responsive img-portfolio img-hover"
-        src="images/planes-de-evacuacion.jpg"
-        alt=""
-    /></a>
-
-    <p>
-      En San Jose brindamos un servicio Integral para la confecciona del Plan de
-      Evacuación. El Plan es de aplicación obligatoria en edificios, tanto
-      públicos como privados, oficinas, escuelas, y en todos aquellos
-      establecimientos que brindan atención al público.
-    </p>
-    <a
-      href="planes-de-evacuacion.html"
-      class="btn btn-primary btn-primary btn-marginbottom"
-      >Conocé más <span class="fa fa-chevron-right"></span
-    ></a>
-  </div>
-  <div class="col-md-4 col-sm-6">
-    <a href="seguridad-para-servicios-de-salud.html">
-      <div style="position: relative; text-align: left; color: white;">
-        <img
-          class="img-responsive img-portfolio img-hover"
-          src="images/seguridad-para-servicios-de-salud.jpg"
-          alt=""
-        />
-        <div style="position: absolute; bottom: 8px; left: 16px; text-shadow: 2px 2px 3px rgba(0,0,0,0.6);">
-          <h1 style="margin-top: 0px; margin-bottom: 0px; line-height: 30px; font-weight: 900;">SEGURIDAD</h1>
-          <h2 style="margin-top: 0px; margin-bottom: 0px; line-height: 30px; font-weight: 500;">en Servicios de Salud</h2>
-        </div>
-      </div>
-    </a>
-
-    <p>
-      Proveemos un servicio totalmente adaptado a las necesidades de nuestros
-      clientes. Nuestros profesionales se encuentran altamente capacitados tanto
-      para la gestión integral del servicio como para el apoyo a la gestión
-      interna de la empresa.
-    </p>
-
-    <a
-      href="seguridad-para-servicios-de-salud.html"
-      class="btn btn-primary btn-primary btn-marginbottom"
-      >Conocé más <i class="fa fa-chevron-right" aria-hidden="true"></i>
-    </a>
-  </div>
-  <div class="col-md-4 col-sm-6">
-    <a href="medio-ambiente.html">
-      <div style="position: relative; text-align: left; color: white;">
-        <img
-          class="img-responsive img-portfolio img-hover"
-          src="images/medio-ambiente.jpg"
-          alt=""
-        />
-        <div style="position: absolute; bottom: 8px; left: 16px; text-shadow: 3px 3px 4px rgba(0,0,0,0.6);">
-          <h1 style="margin-top: 0px; margin-bottom: 0px; line-height: 30px; font-weight: 900;">MEDIO<br>AMBIENTE</h1>
-          <h2 style="margin-top: 0px; margin-bottom: 0px; line-height: 30px; font-weight: 500;"></h2>
-        </div>
-      </div>
-    </a>
-    <p>
-      Respuesta a los desafíos existentes y evaluando las oportunidades de
-      optimizar cada proceso de trabajo para minimizar el impacto de las
-      actividades sobre el medio ambiente.
-    </p>
-    <a
-      href="medio-ambiente.html"
-      class="btn btn-primary btn-primary btn-marginbottom"
-      >Conocé más <span class="glyphicon glyphicon-chevron-right"></span
-    ></a>
-  </div>
+  {% include index/servicio.html
+    h1="HIGIENE"
+    h2="y Seguridad"
+    href="higiene-y-seguridad.html"
+    img="images/higiene-y-seguridad-big.jpg"
+    p="Proveemos un servicio totalmente
+      adaptado a las necesidades de nuestros clientes. Nuestros profesionales se
+      encuentran altamente."
+  %}
+  {% include index/servicio.html
+    h1="SEGURIDAD"
+    h2="en la Construcción"
+    href="seguridad-en-la-construccion.html"
+    img="images/seguridad-en-la-construccion-big.jpg"
+    p="Proveemos un servicio totalmente
+      adaptado a las necesidades de nuestros clientes. Nuestros profesionales se
+      encuentran altamente."
+  %}
+  {% include index/servicio.html
+    h1="PLANES"
+    h2="de Evacuación"
+    href="planes-de-evacuacion.html"
+    img="images/planes-de-evacuacion-big.jpg"
+    p="Proveemos un servicio totalmente
+      adaptado a las necesidades de nuestros clientes. Nuestros profesionales se
+      encuentran altamente."
+  %}
+  {% include index/servicio.html
+    h1="SEGURIDAD"
+    h2="en Servicios de Salud"
+    href="seguridad-para-servicios-de-salud.html"
+    img="images/seguridad-para-servicios-de-salud-big.jpg"
+    p="Proveemos un servicio totalmente
+      adaptado a las necesidades de nuestros clientes. Nuestros profesionales se
+      encuentran altamente."
+  %}
+  {% include index/servicio.html
+    h1="MEDIO<br>AMBIENTE"
+    h2=""
+    href="medio-ambiente.html"
+    img="images/medio-ambiente-big.jpg"
+    p="Proveemos un servicio totalmente
+      adaptado a las necesidades de nuestros clientes. Nuestros profesionales se
+      encuentran altamente."
+  %}
 </div>
