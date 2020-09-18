@@ -13,3 +13,6 @@ css:
 js:
   bootstrap: https://stackpath.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js
   jquery: https://code.jquery.com/jquery-1.11.1.min.js
+
+plugins:
+  - jekyll-pages-directory
