@@ -3,27 +3,27 @@
       <h2>Otros Servicios</h2>
       <hr>
     </div>
-    {% if page.title != "Higiene y Seguridad" %}
-    {% include otro-servicio.html href="higiene-y-seguridad.html" img="images/higiene-y-seguridad-big.jpg" h1="HIGIENE" h2="y Seguridad"%}
+    {% if title != "Higiene y Seguridad" %}
+    {% include "otro-servicio.html" href:"/higiene-y-seguridad/" img:"/images/higiene-y-seguridad-big.jpg" h1:"HIGIENE" h2:"y Seguridad" %}
     {% endif %}
 
-    {% if page.title != "Seguridad en la Construccion" %}
-    {% include otro-servicio.html href="seguridad-en-la-construccion.html" img="images/seguridad-en-la-construccion-big.jpg" h1="SEGURIDAD" h2="en la Construccion"%}
+    {% if title != "Seguridad en la Construccion" %}
+    {% include "otro-servicio.html" href:"/seguridad-en-la-construccion/" img:"/images/seguridad-en-la-construccion-big.jpg" h1:"SEGURIDAD" h2:"en la Construccion" %}
     {% endif %}
 
-    {% if page.title != "Control de Incendios" %}
-    {% include otro-servicio.html href="control-de-incendios.html" img="images/control-de-incendios-big.jpg" h1="CONTROL" h2="de Incendios"%}
+    {% if title != "Control de Incendios" %}
+    {% include "otro-servicio.html" href:"/control-de-incendios/" img:"/images/control-de-incendios-big.jpg" h1:"CONTROL" h2:"de Incendios" %}
     {% endif %}
 
-    {% if page.title != "Seguridad para servicios de Salud" %}
-    {% include otro-servicio.html href="seguridad-para-servicios-de-salud.html" img="images/seguridad-para-servicios-de-salud-big.jpg" h1="SEGURIDAD" h2="en Servicios de Salud"%}
+    {% if title != "Seguridad para servicios de Salud" %}
+    {% include "otro-servicio.html" href:"/seguridad-para-servicios-de-salud/" img:"/images/seguridad-para-servicios-de-salud-big.jpg" h1:"SEGURIDAD" h2:"en Servicios de Salud" %}
     {% endif %}
 
-    {% if page.title != "Medio Ambiente" %}
-    {% include otro-servicio.html href="medio-ambiente.html" img="images/medio-ambiente-big.jpg" h1="MEDIO" h2="AMBIENTE"%}
+    {% if title != "Medio Ambiente" %}
+    {% include "otro-servicio.html" href:"/medio-ambiente/" img:"/images/medio-ambiente-big.jpg" h1:"MEDIO" h2:"AMBIENTE" %}
     {% endif %}
 
-    {% if page.title != "Estudio de Ergonomía" %}
-    {% include otro-servicio.html href="estudio-de-ergonomia.html" img="images/estudio-de-ergonomia-big.jpg" h1="ESTUDIO" h2="de Ergonomía"%}
+    {% if title != "Estudio de Ergonomía" %}
+    {% include "otro-servicio.html" href:"/estudio-de-ergonomia/" img:"/images/estudio-de-ergonomia-big.jpg" h1:"ESTUDIO" h2:"de Ergonomía" %}
     {% endif %}
 </div>
